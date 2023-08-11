@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(17, 3, 44);
+  font-size: 1.1rem;
+}
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: linear-gradient(to right top, #b4c3bd, #6a768e);
+  border-radius: 20px;
+  padding: 2rem;
+}
+.input-box,
+.check-box {
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.col1 {
+  min-width: 200px;
+}
+.content {
+  display: flex;
+}
+
+input[type="text"],
+input[type="date"] {
+  background-color: rgb(194, 205, 212);
+  color: rgb(27, 3, 3);
+  padding: 3px 10px 3px 8px;
+  height: 35px;
+  border-radius: 5px;
+  width: 250px;
+  border: 2px solid transparent;
+  outline: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all 0.3s linear;
+}
+input[type="text"]:hover,
+input[type="date"]:hover,
+input[type="text"]:active,
+input[type="date"]:active {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transform: scale(0.98);
+}
+.instruct {
+  padding-left: 1rem;
+}
+
+label[for="male"],
+label[for="female"] {
+  padding-right: 3rem;
+  font-size: 1.1rem;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.otherhobbytext {
+  display: flex;
+}
+.hobbies,.degree,.course {
+  padding-top: 0.3rem;
+}
+textarea {
+    width: 250px;
+    height: 50px;
+    resize: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(194, 205, 212);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: all 0.3s linear;
+}
+
+textarea:hover,
+textarea:active {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transform: scale(0.98);
+}
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+.end {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.5rem;
+}
+#submit, #reset {
+  width: 40%;
+  padding: 0.2rem;
+  font-size: 1.3rem;
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color: rgb(194, 205, 212);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: all 0.3s ease;
+}
+#submit:hover, #reset:hover,
+#submit:active, #reset:active {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 750px) {
+  .content {
+    flex-direction: column;
+  }
+  .instruct {
+    padding-left: 0;
+    padding-top: 0.4rem;
+  }
+  .otherhobbytext {
+    flex-direction: column;
+  }
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 550px) {
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    width: 150px;
+  }
+  textarea {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .input-box,
+  .check-box {
+    flex-direction: column;
+  }
+  input {
+    margin-top: 0.6rem;
+  }
+}

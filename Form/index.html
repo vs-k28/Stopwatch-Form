@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="userdetails">
+                <!-- firstname -->
+                <div class="input-box">
+                    <div class="col1"><label for="fname" class="details">First Name</label></div>
+                    <div class="content">
+                        <div class="col2"><input type="text" name="first name" id="fname"
+                                placeholder="Enter your first name"></div>
+                        <div class="instruct col3">
+                            (Max 50 Characters Allowed)
+                        </div>
+                    </div>
+
+                </div>
+                <!-- lastname -->
+                <div class="input-box">
+                    <div class="col1"><label for="lname" class="details">Last Name</label></div>
+                    <div class="content">
+                        <div class="col2"><input type="text" name="last name" id="fname"
+                                placeholder="Enter your last name"></div>
+                        <div class="instruct">
+                            (Max 50 Characters Allowed)
+                        </div>
+                    </div>
+
+                </div>
+                <!-- email -->
+                <div class="input-box">
+                    <div class="col1"><label for="email" class="details">Email ID</label></div>
+                    <div class="content">
+                        <div class="col2"><input type="text" name="email" id="email" placeholder="Enter your mail">
+                        </div>
+                        <div class="instruct">
+                            (Enter Valid mail ID)
+                        </div>
+                    </div>
+
+                </div>
+                <!-- mobile number -->
+                <div class="input-box">
+                    <div class="col1"><label for="number" class="details">Mobile Number</label></div>
+                    <div class="content">
+                        <div class="col2"><input type="text" name="number" id="number" placeholder="Enter your number">
+                        </div>
+                        <div class="instruct">
+                            (10 Digts Allowed)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="userdetails">
+                <!-- gender -->
+                <div class="input-box">
+                    <div class="heading col1" id="gender">Gender</div>
+                    <div class="male col2">
+                        <input type="radio" name="gender" value="male" id="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="female">
+                        <input type="radio" name="gender" value="female" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <!-- date of birth -->
+                <div class="input-box">
+                    <div class="col1"><label for="dob" class="details">Date of Birth(DOB)</label></div>
+                    <div class="col2"><input type="date" name="DOB" id="dob"></div>
+                </div>
+                <!-- address -->
+                <div class="input-box">
+                    <div class="heading col1">Address</div>
+                    <div class="col2"><textarea cols="30" rows="5"></textarea></div>
+                </div>
+            </div>
+            <div class="userdetails">
+                <!-- city -->
+                <div class="input-box">
+                    <div class="col1"><label for="city" class="details">City
+                        </label></div>
+                    <div class="content">
+                        <div class="col2"><input type="text" name="city" id="city" placeholder="Enter your city"></div>
+                        <div class="instruct">(Max 20 Characters Allowed)</div>
+                    </div>
+
+                </div>
+                <!-- pincode -->
+                <div class="input-box">
+                    <div class="col1"><label for="pin" class="details">Pin Code
+                        </label></div>
+                    <div class="content">
+                        <div class="col2"><input type="text" name="pincode" id="pin" placeholder="Enter your pin code">
+                        </div>
+                        <div class="instruct">(Max 6 numbers Allowed)</div>
+                    </div>
+
+                </div>
+                <!-- state -->
+                <div class="input-box">
+                    <div class="col1"><label for="state" class="details">State
+                        </label></div>
+                    <div class="content">
+                        <div class="col2"><input type="text" name="state" id="state" placeholder="Enter your state">
+                        </div>
+                        <div class="instruct">(Max 20 Characters Allowed)</div>
+                    </div>
+
+                </div>
+                <!-- country -->
+                <div class="input-box">
+                    <div class="col1"><label for="country" class="details">Country
+                        </label></div>
+                    <div class="content">
+                        <div class="col2"><input type="text" name="country" id="country"
+                                placeholder="Enter your country"></div>
+                        <div class="instruct">(Max 20 Characters Allowed)</div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Hobbies -->
+            <div class="check-box hobby-cont">
+                <div class="heading col1">Hobbies</div>
+                <div class="input-field">
+                    <div class="hobbies">
+                        <input type="checkbox" name="hobby1" id="drawing" value="drawing">
+                        <label for="drawing">Drawing</label>
+                    </div>
+                    <div class="hobbies">
+                        <input type="checkbox" name="hobby2" id="singing" value="singing">
+                        <label for="singing">Singing</label>
+                    </div>
+                    <div class="hobbies">
+                        <input type="checkbox" name="hobby3" id="dancing" value="dancing">
+                        <label for="dancing">Dancing</label>
+                    </div>
+                    <div class="hobbies">
+                        <input type="checkbox" name="hobby4" id="sketching" value="sketching">
+                        <label for="sketching">Sketching</label>
+                    </div>
+                    <div class="hobbies others">
+                        <input type="checkbox" name="others" id="others" value="others">
+                        <label for="others">Others</label>
+                    </div>
+                    <div class="hobbies otherhobbytext">
+                        <textarea name="otherhobbies" cols="20" rows="1">Ex: Gaming</textarea>
+                        <div class="instruct">(Max 50 Characters Allowed)</div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Degree -->
+            <div class="check-box">
+                <div class="heading col1">Highest Degree</div>
+                <div class="input-field">
+                    <div class="degree">
+                        <input type="checkbox" name="Degree" id="highschool" value="HighSchool">
+                        <label for="highschool">High School(10th)</label>
+                    </div>
+                    <div class="degree">
+                        <input type="checkbox" name="Degree" id="higherschool" value="HigherSchool">
+                        <label for="higherschool">Higher School(12th)</label>
+                    </div>
+                    <div class="degree">
+                        <input type="checkbox" name="Degree" id="bachelors" value="Bachelors">
+                        <label for="bachelors">Graduation(Bachelors)</label>
+                    </div>
+                    <div class="degree">
+                        <input type="checkbox" name="Degree" id="masters" value="Masters">
+                        <label for="masters">Post Graduation(Masters)</label>
+                    </div>
+                    <div class="degree">
+                        <input type="checkbox" name="Degree" id="phd" value="phd">
+                        <label for="phd">Phd</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Courses applied -->
+            <div class="check-box course-cont">
+                <div class="heading col1">Courses Applied</div>
+                <div class="input-field">
+                    <div class="course">
+                        <input type="checkbox" id="html" value="html" name="course1">
+                        <label for="html">HTML</label>
+                    </div>
+                    <div class="course">
+                        <input type="checkbox" id="css" value="css" name="course2">
+                        <label for="css">CSS</label>
+                    </div>
+                    <div class="course">
+                        <input type="checkbox" id="js" value="javascript" name="course3">
+                        <label for="js">JavaScript</label>
+                    </div>
+                    <div class="course">
+                        <input type="checkbox" id="php" value="php" name="course4">
+                        <label for="php">PHP</label>
+                    </div>
+                    <div class="course">
+                        <input type="checkbox" id="python" value="python" name="course5">
+                        <label for="python">Python</label>
+                    </div>
+                    <div class="course">
+                        <input type="checkbox" id="java" value="java" name="course6">
+                        <label for="java">Java</label>
+                    </div>
+                    <div class="course">
+                        <input type="checkbox" id="reactjs" value="reactjs" name="course7">
+                        <label for="reactjs">React.Js</label>
+                    </div>
+                    <div class="course">
+                        <input type="checkbox" id="angular" value="angular" name="course8">
+                        <label for="angular">Angular</label>
+                    </div>
+                    <div class="course">
+                        <input type="checkbox" id="django" value="django" name="course9">
+                        <label for="django">Django</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="end">
+                <input id="submit" type="button" value="submit">
+                <input id="reset" type="reset" value="Reset">
+            </div>
+            
+        </form>
+
+    </div>
+</body>
+
+</html>

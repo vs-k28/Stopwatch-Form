@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: url("./background.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  margin: 1.6rem auto;
+  border-radius: 50px;
+}
+main h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #470366;
+}
+
+.container {
+  width: 350px;
+  height: 150px;
+  border: 6px solid;
+  background-repeat: repeat;
+  border-radius: 150px 150px 100px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.4rem;
+  margin-right: 1.1rem;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  animation: bcolor 6s linear infinite;
+}
+#timer {
+  color: #2f0542;
+}
+button {
+  border: none;
+  background: none;
+  font-size: 3rem;
+  color: rgb(14, 61, 15);
+  margin-bottom: 1.1rem;
+  transition: all linear 2s;
+  cursor: pointer;
+}
+button:disabled {
+  color: #5d5e95;
+  cursor: not-allowed;
+}
+button:disabled:hover {
+  animation: none;
+}
+.butn {
+  display: flex;
+  align-items: center;
+}
+
+#play,
+#pause {
+  margin-top: -0.6rem;
+  margin-right: 4.5rem;
+}
+#stop {
+  margin-top: -0.6rem;
+}
+.btn:hover {
+  animation: colors 3s linear infinite;
+}
+@keyframes colors {
+  0% {
+    color: #427ac4;
+    transform: rotate(0deg);
+  }
+  25% {
+    color: #490f64;
+    transform: rotate(360deg);
+  }
+  50% {
+    color: #103d5b;
+    transform: rotate(0deg);
+  }
+  75% {
+    color: #6263a8;
+    transform: rotate(360deg);
+  }
+  75% {
+    color: #053465;
+    transform: rotate(0deg);
+  }
+}
+@keyframes bcolor {
+  0% {
+    color: #063777;
+  }
+  25% {
+    color: #9741be;
+  }
+  50% {
+    color: #5499c7;
+  }
+  75% {
+    color: #5d5fe0;
+  }
+  75% {
+    color: #5d9cdf;
+  }
+}
